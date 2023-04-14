@@ -9,7 +9,8 @@ async function bootstrap() {
     .setTitle('Clientes')
     .setDescription('Permite gestionar clientes')
     .setVersion('1.0')
-    .addTag('clientes')
+    .addTag('Clientes')
+    .addTag('Health')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/docs', app, document);
