@@ -8,12 +8,15 @@ export class Cliente {
     fechaNacimiento: Date;
     @Optional()
     fechaMuerteCalculada: Date;
+    @Optional()
+    edad: number;
 
     constructor(id:string = null, nombre: string, apellido: string, fechaNacimiento: Date) {
         this._id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
+        this.edad = this.getEdad();
         this.fechaMuerteCalculada = this.calcularFechaMuerte(fechaNacimiento);
     }
 
