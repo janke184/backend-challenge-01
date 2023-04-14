@@ -19,7 +19,6 @@ export class ClientesService {
 
     create(creaClienteDto: CreaClienteDto){
 
-        console.log('creaClienteDto', creaClienteDto);
         creaClienteDto.fechaNacimiento = new Date(creaClienteDto.fechaNacimiento);
 
         const new_cliente = new Cliente(
